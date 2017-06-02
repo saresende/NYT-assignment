@@ -6,33 +6,43 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
 </head>
 
 <body>
     <div class='container'>
         <div class="row">
-            <div class="col-12-md">
-                <h1>New York Times Search</h1>
+            <div class="col-12-md headerBar text-center">
+            	<img src="assets/images/nyt.png" class="header" alt="The New York Times"/>
+                <h2>Official Article Database Search</h2>
+                <br>
             </div>
         </div>
         <div class="row">
             <div class="col-12-md">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Search Parameters
+                    <div class="panel-heading"><span class="glyphicon glyphicon-leaf"></span> SEARCH PARAMETERS
                     </div>
                     <div class="panel-body">
                     	<div class="form-group">
                     		<label for="search">Search Term:</label>
                     		<input type="search" class="form-control" id="term" placeholder="Enter your search term">
+                    	</div>
+                    	<div class="form-group">
                     		<label for="recorder">Numbers of Records to Retrieve:</label>
                     		<input type="recorder" class="form-control" id="records" placeholder="Enter a number">
+                    	</div>
+                    	<div class="form-group">
                     		<label for="startYear">Start Year (Optional): </label>
                     		<input type="startYear" class="form-control" id="yearStart" placeholder="Enter year e.g. 1999, 2000, etc.">
+                    	</div>
+                    	<div class="form-group">
                     		<label for="endYear">End Year (Optional):</label>
                     		<input type="endYear" class="form-control" id="yearEnd" placeholder="Enter an end year ">
                     	</div>
-                    	<button id="searchBtn" type="Search">Search</button><button id="clearBtn" type="Clear">Clear</button>
+                    	<br>
+                    	<button id="searchBtn" type="Search">Search</button>    <button id="clearBtn" type="Clear">Clear</button>
                     </div>
                 </div>
             </div>
@@ -40,8 +50,8 @@
         <div class="row">
             <div class="col-12-md">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Relevant Articles</div>
-                    <div class="panel-body"></div>
+                    <div class="panel-heading"><span class="glyphicon glyphicon-leaf"></span> RELEVANT ARTICLES</div>
+                    <div class="panel-body" id="#articles"></div>
                 </div>
             </div>
         </div>
